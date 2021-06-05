@@ -17,6 +17,11 @@ namespace API.SERVICE
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
+                //c.AddSecurityDefinition("a", new OpenApiSecurityScheme
+                //{
+                //    Type = SecuritySchemeType.OpenIdConnect,
+                //    OpenIdConnectUrl = new Uri("")
+                //});
                 c.DocumentFilter<SecretApiFilter>();
                 c.SwaggerDoc("v1-secret", new OpenApiInfo
                 {

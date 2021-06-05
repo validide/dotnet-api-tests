@@ -4,6 +4,8 @@ namespace API.SERVICE
 {
     [ApiController]
     [Route("[controller]")]
+    //[ApiExplorerSettings(IgnoreApi = true)]
+
     public class SecretApiController : ControllerBase
     {
         [HttpGet]
